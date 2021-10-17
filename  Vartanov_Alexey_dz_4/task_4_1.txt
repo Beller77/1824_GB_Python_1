@@ -1,0 +1,55 @@
+Установлен ли пакет pillow в глобальном окружении:
+
+PS C:\PycharmProjects\1824_GB_Python_1> pip freeze
+PS C:\PycharmProjects\1824_GB_Python_1> pip show pillow
+WARNING: Package(s) not found: pillow
+
+Установить самую свежую версию pillow:
+
+PS C:\PycharmProjects\1824_GB_Python_1> pip install pillow
+Collecting pillow
+  Using cached Pillow-8.3.2-cp39-cp39-win_amd64.whl (3.2 MB)
+Installing collected packages: pillow
+Successfully installed pillow-8.3.2
+PS C:\PycharmProjects\1824_GB_Python_1> pip show pillow
+Name: Pillow
+Version: 8.3.2
+Summary: Python Imaging Library (Fork)
+Home-page: https://python-pillow.org
+Author: Alex Clark (PIL Fork Author)
+Author-email: aclark@python-pillow.org
+License: HPND
+Location: c:\users\deylo\appdata\local\programs\python\python39\lib\site-packages
+Requires:
+Required-by:
+
+Создать и активировать виртуальное окружение. Убедиться, что в нем нет пакета pillow:
+
+(venv) PS C:\PycharmProjects\1824_GB_Python_1> pip freeze
+(venv) PS C:\PycharmProjects\1824_GB_Python_1>
+
+Установить в виртуальное окружение pillow версии 7.1.1 (или другой, отличной от самой свежей):
+
+(venv) PS C:\PycharmProjects\1824_GB_Python_1> pip install pillow==8.1
+Collecting pillow==8.1
+  Using cached Pillow-8.1.0-cp39-cp39-win_amd64.whl (2.2 MB)
+Installing collected packages: pillow
+Successfully installed pillow-8.1.0
+(venv) PS C:\PycharmProjects\1824_GB_Python_1> pip freeze
+Pillow==8.1.0
+(venv) PS C:\PycharmProjects\1824_GB_Python_1> pip show pillow
+Name: Pillow
+Version: 8.1.0
+Summary: Python Imaging Library (Fork)
+Home-page: https://python-pillow.org
+Author: Alex Clark (PIL Fork Author)
+Author-email: aclark@python-pillow.org
+License: HPND
+Location: c:\pycharmprojects\1824_gb_python_1\venv\lib\site-packages
+Requires:
+Required-by:
+
+Деактивировать виртуальное окружение:
+
+(venv) PS C:\PycharmProjects\1824_GB_Python_1> deactivate
+PS C:\PycharmProjects\1824_GB_Python_1>
